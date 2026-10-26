@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <linearGradient id="sw-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041F14"/>
+      <stop offset="50%" stop-color="#063221"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <radialGradient id="sw-glow" cx="80%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.3"/>
+      <stop offset="60%" stop-color="#059669" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#064E3B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sw-glow2" cx="20%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#041F14" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="sw-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#FFFFFF" fill-opacity="0.07"/>
+    </pattern>
+    <linearGradient id="bar-grad1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="bar-grad2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#6EE7B7"/>
+    </linearGradient>
+    <filter id="sw-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="url(#sw-bg)"/>
+  <rect width="1000" height="1000" fill="url(#sw-grid)"/>
+  <rect width="1000" height="1000" fill="url(#sw-glow)"/>
+  <rect width="1000" height="1000" fill="url(#sw-glow2)"/>
+
+  <!-- Top Category / Subtitle -->
+  <text x="80" y="115" font-family="'Neue Montreal', system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" letter-spacing="6" fill="#6EE7B7">PERSONAL FINANCE &amp; EXPENSES</text>
+  <rect x="80" y="135" width="48" height="3" rx="1.5" fill="#34D399"/>
+
+  <!-- Finance & Analytics Graphics Area -->
+  <g transform="translate(80, 180)">
+    <!-- Top Row: Balance Card & Savings Target -->
+    <g transform="translate(0, 0)">
+      <rect width="470" height="160" rx="18" fill="#0A2D20" fill-opacity="0.8" stroke="#34D399" stroke-opacity="0.3" stroke-width="1.5" filter="url(#sw-shadow)"/>
+      <text x="28" y="42" font-family="'Neue Montreal', system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1.5" fill="#A7F3D0">TOTAL BALANCE</text>
+      <text x="28" y="92" font-family="'Neue Montreal', system-ui, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF">$24,680<tspan font-size="28" fill="#6EE7B7">.50</tspan></text>
+      <rect x="330" y="24" width="112" height="32" rx="16" fill="#10B981" fill-opacity="0.2"/>
+      <text x="386" y="45" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="700" fill="#6EE7B7" text-anchor="middle">▲ +18.4%</text>
+      <text x="28" y="132" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="400" fill="#6EE7B7" fill-opacity="0.8">Monthly income vs. expense flow: Healthy</text>
+    </g>
+
+    <g transform="translate(495, 0)">
+      <rect width="345" height="160" rx="18" fill="#0A2D20" fill-opacity="0.8" stroke="#34D399" stroke-opacity="0.2" stroke-width="1.5" filter="url(#sw-shadow)"/>
+      <text x="28" y="42" font-family="'Neue Montreal', system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1.5" fill="#A7F3D0">MONTHLY SAVINGS</text>
+      <text x="28" y="86" font-family="'Neue Montreal', system-ui, sans-serif" font-size="36" font-weight="800" fill="#FFFFFF">$8,450</text>
+      <text x="285" y="86" font-family="'Neue Montreal', system-ui, sans-serif" font-size="15" font-weight="700" fill="#34D399" text-anchor="end">85% of goal</text>
+      <rect x="28" y="112" width="289" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.1"/>
+      <rect x="28" y="112" width="245" height="10" rx="5" fill="url(#bar-grad1)"/>
+    </g>
+
+    <!-- Bottom Row: Expense Breakdown Chart & Monthly Trend -->
+    <g transform="translate(0, 185)">
+      <rect width="840" height="340" rx="20" fill="#06261A" fill-opacity="0.75" stroke="#34D399" stroke-opacity="0.25" stroke-width="1.5" filter="url(#sw-shadow)"/>
+      <text x="32" y="45" font-family="'Neue Montreal', system-ui, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Expense Analytics &amp; Spending Trends</text>
+      <text x="32" y="70" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="400" fill="#94A3B8">Real-time categorized breakdown with monthly comparison</text>
+
+      <!-- Grid lines -->
+      <g stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1">
+        <line x1="32" y1="120" x2="520" y2="120"/>
+        <line x1="32" y1="180" x2="520" y2="180"/>
+        <line x1="32" y1="240" x2="520" y2="240"/>
+        <line x1="32" y1="290" x2="520" y2="290"/>
+      </g>
+
+      <!-- Trend Bars (Months) -->
+      <rect x="65" y="190" width="36" height="100" rx="6" fill="url(#bar-grad1)" fill-opacity="0.7"/>
+      <text x="83" y="312" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">MAY</text>
+      <rect x="135" y="160" width="36" height="130" rx="6" fill="url(#bar-grad1)" fill-opacity="0.8"/>
+      <text x="153" y="312" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">JUN</text>
+      <rect x="205" y="210" width="36" height="80" rx="6" fill="url(#bar-grad1)" fill-opacity="0.6"/>
+      <text x="223" y="312" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">JUL</text>
+      <rect x="275" y="140" width="36" height="150" rx="6" fill="url(#bar-grad1)" fill-opacity="0.85"/>
+      <text x="293" y="312" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">AUG</text>
+      <rect x="345" y="110" width="36" height="180" rx="6" fill="url(#bar-grad2)"/>
+      <text x="363" y="312" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="700" fill="#34D399" text-anchor="middle">SEP</text>
+      <rect x="415" y="130" width="36" height="160" rx="6" fill="url(#bar-grad1)"/>
+      <text x="433" y="312" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="600" fill="#A7F3D0" text-anchor="middle">OCT</text>
+
+      <!-- Category Ring Chart -->
+      <g transform="translate(670, 195)">
+        <circle cx="0" cy="0" r="75" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="22"/>
+        <circle cx="0" cy="0" r="75" fill="none" stroke="#10B981" stroke-width="22" stroke-dasharray="190 471" stroke-dashoffset="0"/>
+        <circle cx="0" cy="0" r="75" fill="none" stroke="#34D399" stroke-width="22" stroke-dasharray="140 471" stroke-dashoffset="-195"/>
+        <circle cx="0" cy="0" r="75" fill="none" stroke="#059669" stroke-width="22" stroke-dasharray="90 471" stroke-dashoffset="-340"/>
+        <text x="0" y="5" font-family="'Neue Montreal', system-ui, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">$3,420</text>
+        <text x="0" y="24" font-family="'Neue Montreal', system-ui, sans-serif" font-size="11" font-weight="600" fill="#A7F3D0" text-anchor="middle">SPENT</text>
+      </g>
+
+      <!-- Legend -->
+      <g transform="translate(560, 290)">
+        <circle cx="10" cy="10" r="5" fill="#10B981"/>
+        <text x="24" y="14" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Housing 42%</text>
+        <circle cx="140" cy="10" r="5" fill="#34D399"/>
+        <text x="154" y="14" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Food &amp; Dining 30%</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Big Title at Bottom -->
+  <text x="80" y="915" font-family="'Neue Montreal', system-ui, -apple-system, sans-serif" font-size="88" font-weight="800" letter-spacing="-1" fill="#FFFFFF">SpendWise</text>
+</svg>

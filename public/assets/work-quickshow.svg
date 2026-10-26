@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <linearGradient id="ss-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140409"/>
+      <stop offset="50%" stop-color="#260814"/>
+      <stop offset="100%" stop-color="#4C0519"/>
+    </linearGradient>
+    <radialGradient id="ss-glow" cx="80%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#FB7185" stop-opacity="0.32"/>
+      <stop offset="60%" stop-color="#BE123C" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#260814" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ss-glow2" cx="20%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#140409" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="ss-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#FFFFFF" fill-opacity="0.07"/>
+    </pattern>
+    <filter id="ss-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="url(#ss-bg)"/>
+  <rect width="1000" height="1000" fill="url(#ss-grid)"/>
+  <rect width="1000" height="1000" fill="url(#ss-glow)"/>
+  <rect width="1000" height="1000" fill="url(#ss-glow2)"/>
+
+  <!-- Top Category / Subtitle -->
+  <text x="80" y="115" font-family="'Neue Montreal', system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" letter-spacing="6" fill="#FECDD3">FULL-STACK E-COMMERCE PLATFORM</text>
+  <rect x="80" y="135" width="48" height="3" rx="1.5" fill="#FB7185"/>
+
+  <!-- E-Commerce Storefront Graphics Area -->
+  <g transform="translate(80, 180)">
+    <!-- Main Product Showcase Card -->
+    <g transform="translate(0, 0)">
+      <rect width="500" height="525" rx="20" fill="#240715" fill-opacity="0.85" stroke="#FB7185" stroke-opacity="0.3" stroke-width="1.5" filter="url(#ss-shadow)"/>
+
+      <!-- Product Image Mockup Banner -->
+      <g transform="translate(24, 24)">
+        <rect width="452" height="230" rx="14" fill="#3B0B20" stroke="#FB7185" stroke-opacity="0.2" stroke-width="1"/>
+        <circle cx="226" cy="115" r="70" fill="none" stroke="#FDA4AF" stroke-width="8" stroke-dasharray="220 500" stroke-linecap="round"/>
+        <rect x="135" y="90" width="30" height="50" rx="12" fill="#E11D48"/>
+        <rect x="287" y="90" width="30" height="50" rx="12" fill="#E11D48"/>
+        <circle cx="226" cy="115" r="40" fill="#E11D48" fill-opacity="0.25"/>
+        <rect x="360" y="18" width="75" height="24" rx="12" fill="#BE123C"/>
+        <text x="397" y="34" font-family="'Neue Montreal', system-ui, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">HOT DEAL</text>
+      </g>
+
+      <!-- Details -->
+      <g transform="translate(24, 280)">
+        <text x="0" y="24" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" fill="#FDA4AF">AUDIO &amp; WEARABLES</text>
+        <text x="0" y="58" font-family="'Neue Montreal', system-ui, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF">Aura Pro Studio Wireless</text>
+        <text x="0" y="85" font-family="'Neue Montreal', system-ui, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">Active Noise Cancelling · 40h Battery · Spatial Audio</text>
+
+        <!-- Rating Stars -->
+        <g transform="translate(0, 105)">
+          <text x="0" y="16" font-family="'Neue Montreal', system-ui, sans-serif" font-size="16" fill="#FBBF24">★★★★★</text>
+          <text x="75" y="15" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="600" fill="#CBD5E1">4.9 (420 reviews)</text>
+        </g>
+
+        <!-- Price & Cart Button -->
+        <g transform="translate(0, 150)">
+          <text x="0" y="32" font-family="'Neue Montreal', system-ui, sans-serif" font-size="36" font-weight="800" fill="#FFFFFF">$249<tspan font-size="22" fill="#FDA4AF">.00</tspan></text>
+          <text x="110" y="30" font-family="'Neue Montreal', system-ui, sans-serif" font-size="16" font-weight="500" fill="#94A3B8" text-decoration="line-through">$320</text>
+
+          <rect x="270" y="0" width="182" height="46" rx="23" fill="#E11D48"/>
+          <text x="361" y="28" font-family="'Neue Montreal', system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">+ Add to Cart</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Side Shopping Cart & Order Summary -->
+    <g transform="translate(525, 0)">
+      <rect width="315" height="310" rx="20" fill="#240715" fill-opacity="0.85" stroke="#FB7185" stroke-opacity="0.3" stroke-width="1.5" filter="url(#ss-shadow)"/>
+      <text x="24" y="38" font-family="'Neue Montreal', system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Shopping Bag</text>
+      <rect x="240" y="22" width="50" height="22" rx="11" fill="#E11D48" fill-opacity="0.3"/>
+      <text x="265" y="37" font-family="'Neue Montreal', system-ui, sans-serif" font-size="11" font-weight="800" fill="#FDA4AF" text-anchor="middle">3</text>
+
+      <line x1="24" y1="58" x2="291" y2="58" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+
+      <g transform="translate(24, 75)">
+        <rect width="40" height="40" rx="8" fill="#3B0B20"/>
+        <text x="52" y="18" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Aura Studio ANC</text>
+        <text x="52" y="34" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="700" fill="#FDA4AF">$249.00</text>
+        <text x="260" y="26" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="end">1x</text>
+      </g>
+
+      <g transform="translate(24, 130)">
+        <rect width="40" height="40" rx="8" fill="#3B0B20"/>
+        <text x="52" y="18" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Magnetic Fast Dock</text>
+        <text x="52" y="34" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="700" fill="#FDA4AF">$69.00</text>
+        <text x="260" y="26" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="end">2x</text>
+      </g>
+
+      <line x1="24" y1="188" x2="291" y2="188" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+
+      <text x="24" y="215" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="600" fill="#94A3B8">Subtotal</text>
+      <text x="291" y="215" font-family="'Neue Montreal', system-ui, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="end">$387.00</text>
+
+      <g transform="translate(24, 240)">
+        <rect width="267" height="44" rx="12" fill="#E11D48"/>
+        <text x="133" y="27" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Checkout Now →</text>
+      </g>
+    </g>
+
+    <!-- Side Trust & Payment Badges Card -->
+    <g transform="translate(525, 335)">
+      <rect width="315" height="190" rx="20" fill="#240715" fill-opacity="0.85" stroke="#FB7185" stroke-opacity="0.25" stroke-width="1.5" filter="url(#ss-shadow)"/>
+      <text x="24" y="36" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" fill="#FDA4AF">SECURITY &amp; PAYMENTS</text>
+
+      <g transform="translate(24, 55)">
+        <rect x="0" y="0" width="75" height="32" rx="8" fill="#FFFFFF" fill-opacity="0.08"/>
+        <text x="37" y="20" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">Stripe</text>
+        <rect x="85" y="0" width="85" height="32" rx="8" fill="#FFFFFF" fill-opacity="0.08"/>
+        <text x="127" y="20" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">Apple Pay</text>
+        <rect x="180" y="0" width="85" height="32" rx="8" fill="#FFFFFF" fill-opacity="0.08"/>
+        <text x="222" y="20" font-family="'Neue Montreal', system-ui, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">PayPal</text>
+      </g>
+
+      <text x="24" y="125" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="600" fill="#34D399">✓ 256-bit SSL Encrypted</text>
+      <text x="24" y="150" font-family="'Neue Montreal', system-ui, sans-serif" font-size="13" font-weight="400" fill="#94A3B8">Automated tax, currency conversion &amp; tracking</text>
+    </g>
+  </g>
+
+  <!-- Big Title at Bottom -->
+  <text x="80" y="915" font-family="'Neue Montreal', system-ui, -apple-system, sans-serif" font-size="88" font-weight="800" letter-spacing="-1" fill="#FFFFFF">ShopSphere</text>
+</svg>
